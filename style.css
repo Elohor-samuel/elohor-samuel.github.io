@@ -1,36 +1,43 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
-    background-color: #f9f9f9;
-    color: #222;
+    line-height: 1.7;
+    background-color: #f5f7fa;
+    color: #1f2933;
 }
 
 header {
-    background-color: #0b3c5d;
+    background: linear-gradient(135deg, #0b3c5d, #06293f);
     color: #ffffff;
-    padding: 2rem 1rem;
+    padding: 3rem 1.5rem;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: auto;
     text-align: center;
 }
 
 header h1 {
-    margin-bottom: 0.3rem;
+    font-size: 2.4rem;
+    margin-bottom: 0.4rem;
 }
 
 .subtitle {
     margin: 0.2rem 0;
-    font-size: 1rem;
+    font-size: 1.05rem;
+    opacity: 0.95;
 }
 
 nav {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 nav a {
     color: #ffffff;
-    margin: 0 0.6rem;
+    margin: 0 0.8rem;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 nav a:hover {
@@ -40,27 +47,24 @@ nav a:hover {
 main {
     max-width: 900px;
     margin: auto;
-    padding: 2rem 1.5rem;
+    padding: 3rem 1.5rem;
     background-color: #ffffff;
 }
 
 section {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 h2 {
     color: #0b3c5d;
-    border-bottom: 2px solid #e0e0e0;
-    padding-bottom: 0.3rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.2rem;
 }
 
-h3 {
-    margin-bottom: 0.2rem;
-}
-
-.date {
-    font-size: 0.9rem;
-    color: #555;
+p {
+    margin-bottom: 1.1rem;
 }
 
 ul {
@@ -71,18 +75,39 @@ li {
     margin-bottom: 0.8rem;
 }
 
+.two-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.6rem;
+}
+
+.cv-link a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #0b3c5d;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.cv-link a:hover {
+    background-color: #06293f;
+}
+
 a {
     color: #0b3c5d;
 }
 
 a:hover {
-    color: #08304a;
+    color: #06293f;
 }
 
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 1.2rem;
+    background-color: #f0f2f5;
     font-size: 0.9rem;
-    background-color: #f0f0f0;
-    color: #444;
+    color: #4b5563;
 }
